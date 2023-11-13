@@ -2,6 +2,8 @@ version: "3.3"
 
 services:
   app:
+    labels:
+      shipyard.route: '/'
     build: .
     command: bash start.sh
     restart: on-failure
